@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for starting Dradis-CE
+
+[Service]
+Type=simple
+WorkingDirectory=/pentest/reporting/dradisframework/dradis-server
+ExecStart=/pentest/reporting/dradisframework/dradis-server/bundle exec rails server -b 0.0.0.0
+
+[Install]
+WantedBy=multi-user.target
